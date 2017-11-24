@@ -178,8 +178,10 @@ code
 .tight
   li
     line-height 1.25em
-    p
-      line-height 1.25em
+  p
+    line-height 1.25em
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
 
 img[alt=image]
     width: 100%
@@ -207,11 +209,12 @@ img[alt=image-60]
     overflow hidden
 
 #frame
-    width 800px
-    height 850px
+    width 100%
+    height 100%
     solid black
-
-#frame
-    zoom: 0.80
-    -moz-transform scale(0.8)
-    -moz-transform-origin 0 0
+    -moz-transform:scale(0.6);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.6);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.6);
+    -webkit-transform-origin: 0 0;

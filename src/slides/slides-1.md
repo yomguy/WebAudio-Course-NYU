@@ -1,132 +1,357 @@
 class: center, middle, vertigo
 
-# Music Hack Day @IRCAM 2017
+# Introduction au Web Audio
+<hr>
+## Master ATIAM - IRCAM / UPMC / Telecom ParisTech
 
-<img src="img/music_hack_day-edit2-1024.jpg" height="400px" />
+<img src="https://bedavid.wp.imt.fr/files/2014/10/ATIAM_logo_LONG_RVB-300x82.jpg">
 
-<!-- <hr> -->
-### KickOff MHD 10/11/2017 - IRCAM
-
----
-class: center, middle, vertigo
-
-# Music and hacking - International Conference
-
-<img src="img/photo_hack_1024.jpg" height="400px" />
-
-http://hacking2017.ircam.fr/
+### Guillaume Pellerin / @yomguy / guillaume.pellerin@ircam.fr
+### Emilie Zawadzki
+### Benjamin Matuszewski
 
 ---
-class: vertigo
+class: vertigo, tight
 
-# Programme
+# Plan
+
+1. Introduction
+
+1. Systèmes, normes, protocoles, standards et applications (GP)
+
+  - Protocoles
+  - Navigateurs
+  - Formats
+
+1.  Langages et architectures logicielles (GP)
+
+  - Langages
+  - Backend
+  - Frontend
+
+1. Web Audio API (GP / BM)
+
+  - Spécifications
+  - Implémentations
+  - Documentation
+  - Cas usage : lecteur audio augmenté
+
+1. Cas d'usage (BM)
+
+  - Projets de recherche avec Web Audio
+  - Librairies WaveJS, SoundWorks
+
+1. Exercices et travaux pratiques (EZ)
+
+---
+class: vertigo, tight
+
+# Introduction
 
 .pull-left[
+## Web ?
 
-## vendredi 10 novembre
+- 1989 : Tim Berners-Lee créé le World Wide Web au CERN
+- HTTP : HyperText Transfer Protocol
+- URL : Uniform Resource Locator
+- HTML : HyperText Markup Language (hyperlien)
+- Serveur / Client Web
 
-- 14h-16h: kick-off, présentation des sponsors et des outils (salle Stravinsky)
-- 16h-17h:  création des équipes (salle Stravinsky)
-- 17h-18h : installation (studios et galerie)
-- 18h-20h: session hacking (studios et galerie)
-- 20h : buffet (galerie)
-- 21h-24h: session hacking (studios et galerie)
-]
-
-.pull-right[
-
-## samedi 11 novembre
-
-- 0h-10h: session hacking (studios et galerie)
-- 8h: petit déjeuner (galerie)
-- 10h: debriefing (studio 5 & galerie)
-- 10h-12h30: session hacking (studios et galerie)
-- 12h30-14h: lunch libre
-    - 14h-16h: session hacking (studios et galerie)
-    - 16h-18h: présentation publique des projets + Q&A (galerie)
-- 18h-19h: concert improvisé tuilé (galerie)
-- 19h-21h: cocktail (galerie)
-
-]
-
----
-class: vertigo
-
-# Locaux / sécurité
-
-- Locaux
- - Studio 6 (15p)
- - Shannon (15p)
- - Studio 5 (6p)
- - Galerie (15p)
-- I/O - Badges
-- Securité
- - télephone urgence : 06 59 43 39 17
- - Guillaume : 06 20 96 28 53 @yomguy
-- Reportage
-- Soudure
-- Boissons
-- Sonos
-- Réseau
-- Nuit (debout ?)
-
----
-class: vertigo
-
-# Communication
-
-- @musichacking17 #musichacking17
-- https://social.ircam.fr/musichackday/channels/town-square
-- https://annuel2.framapad.org/p/musichacking17
-
----
-class: vertigo, center, middle
-
-# Présentations, projets et outils
-## Who? What? Where?
----
-class: vertigo
-
-# Tools
-
-.pull-left[
-
-## Hard
-
-- Rpi (1, 2, 3)
-- Arduino
-- Riot
-- capteurs
-- alimentations USB
-- pas d'imprimante 3D
-- boîte à outils
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/601px-WWW_logo_by_Robert_Cailliau.svg.png" width="50%">
 
 
 ]
 
 .pull-right[
+```HTML5
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- page content -->
+  </body>
+</html>
+```
+]
 
-## Soft
 
-- https://github.com/pyphs/pyphs/
-- https://github.com/Ircam-RnD
-- https://github.com/wavesjs
-- https://github.com/deezer
-- https://github.com/Parisson/TimeSide
-- http://evertims.github.io/#about
+---
+class: vertigo
+
+# Introduction
+
+## W3C : World Wide Web Consortium
+
+- A member-driven organization composed of over 460 companies, universities, start-ups, etc. from all over the world.
+- 44 technicals groups, including Working and Interest Groups where technical specifications are discussed and developed.
+- Over 6,025 published technical reports, including 386 Web standards (or W3C Recommendations) - since January 1st ,1995.
+- About 291 Community and Business Groups, where developers, designers, and anyone passionate about the Web have a place to hold discussions and publish ideas.
+- Near 10,846 active participants constituting the W3C community.
+- A technical staff composed of 67 people, spread on all five continents.
+
+
+---
+class: vertigo, tight
+
+# Introduction
+
+## Web 1.0
+
+```HTML
+<bgsound src="sound1.mid">
+<bgsound src="sound2.au" loop="infinite">
+```
+
+## HTML5
+
+```HTML
+<audio src="http://mainline.i3s.unice.fr/mooc/LaSueur.mp3" controls>
+```
+
+<audio src="http://mainline.i3s.unice.fr/mooc/LaSueur.mp3" controls></audio>
+
+<br>
+
+This HTML5 code:
+
+- initiates a network request to stream the content,
+- deals with decoding/streaming/buffering the incoming data,
+- renders audio controls,
+- updates the progress indicator, time, etc.
+
+---
+class: vertigo, tight
+
+# Introduction
+
+## HTML5
+
+```HTML
+<audio src="http://mainline.i3s.unice.fr/mooc/LaSueur.mp3" controls>
+```
+
+<audio src="http://mainline.i3s.unice.fr/mooc/LaSueur.mp3" controls></audio>
+
+<br>
+
+It's possible to write a custom player: to make your own controls and use the JavaScript API of the <audio> and <video> elements; to call play() and pause(); to read/write properties such as currentTime; to listen to events (ended, error, timeupdate, etc.); and to manage a playlist, etc.
+
+However, there are many things we still cannot do, including:
+
+- Play multiple sounds or music in perfect sync,
+- Play non-streamed sounds (this is a requirement for games: sounds must be loaded in memory),
+- Output directly to the speakers; adding special effects, equalizer, stereo balancing, reverb, etc.
+- Any fancy visualizations that dance with the music (e.g. waveforms and frequencies).
+
+The Web Audio API will fulfill such missing parts, and much more.
+
+
+---
+class: vertigo
+
+# Introduction
+
+<iframe id="frame" src="https://femurdesign.com/theremin/" scrolling="auto" frameborder="0" allowfullscreen="" width="100%"></iframe>
+
+
+---
+class: vertigo
+
+# Introduction
+
+<iframe id="frame" src="https://webaudiodemos.appspot.com/midi-synth/index.html" scrolling="auto" frameborder="0" allowfullscreen="" width="100%"></iframe>
+
+
+---
+class: vertigo
+
+# Introduction
+
+<iframe id="frame" src="http://juno-106.js.org/" scrolling="auto" frameborder="0" allowfullscreen="" width="100%"></iframe>
+
+
+---
+class: vertigo, tight
+
+# Systèmes, normes, protocoles, standards et applications
+
+- IP
+  - https://fr.wikipedia.org/wiki/Internet_Protocol
+  - https://tools.ietf.org/html/rfc791
+- TCP/UDP
+  - https://fr.wikipedia.org/wiki/Transmission_Control_Protocol
+  - https://tools.ietf.org/html/rfc793
+- Architectures client/serveur
+  - https://fr.wikipedia.org/wiki/Client-serveur
+- Navigateurs
+  - (NCSA Mosaic, NetScape, Mozilla)
+  - FireFox
+  - Chromium / Chrome
+  - Safari
+  - Internet Explorer
+  - Opera, etc.
+  - https://fr.wikipedia.org/wiki/Navigateur_web
+- Moteurs de rendu
+  - HTML : KHTML > webkit > Safari & Chrome
+  - JS : Chrome > V8 > NodeJS             
+
+---
+class: vertigo
+
+# Formats media binaires pour le web
+
+## objectifs : compression, streaming, embed metadata
+
+- Image
+  - JPEG
+  - PNG (sans pertes)
+- Audio
+  - MP3
+  - OGG Vorbis
+  - OGG FLAC (sans pertes)
+- Vidéo
+  - MP4
+  - WebM
+- Flash R.I.P.
+
+https://developer.mozilla.org/fr/docs/Web/HTML/Formats_pour_audio_video
+
+
+---
+class: vertigo
+
+# Langages et architectures logicielles
+
+- Backend
+  - langages PHP, Python, Ruby, C++, Go
+  - formats d'échange de meta-données : JSON, XML, HTML
+  - frameworks : Symphony, Django, Ruby On Rails
+- Frontend
+  - HTML, HTML5
+  - CSS, SASS
+  - JavaScript
+  - frameworks : Angular (Google puis Microsoft), React (Facebook), VueJS, etc..............
+- Architectures & requêtes
+  - MVC
+  - AJAX
+  - Restful APIs
+
+---
+class: vertigo
+
+# Web Audio API
+
+## Specifications
+
+https://webaudio.github.io/web-audio-api/
+
+## Documentation
+
+https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API
+
+---
+class: vertigo, tight
+
+# Web Audio simple examples
+
+- Gain node
+  - https://developer.mozilla.org/en-US/docs/Web/API/GainNode
+  - https://jsbin.com/davebu/edit?html,js,console,output
+- Stereo panner
+  - https://developer.mozilla.org/en-US/docs/Web/API/StereoPannerNode
+  - https://jsbin.com/jarimu/edit?html,js,output
+- Biquad filter
+  - https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode
+  - https://jsbin.com/tuvaxar/edit?html,js,output
+- Convolver node
+  - https://developer.mozilla.org/en-US/docs/Web/API/ConvolverNode
+  - https://jsbin.com/belide/edit?html,js,console,output
+  - http://webaudioapi.com/samples/room-effects/
+- Dynamics Compressor node
+  - https://developer.mozilla.org/en-US/docs/Web/API/DynamicsCompressorNode
+  - https://jsbin.com/momixok/edit?html,js,console,output
+
+---
+class: vertigo
+
+# Web Audio with canvas
+
+- 2D real time visualizations: waveforms
+  - https://jsbin.com/wigucu/edit
+- 2D real time visualization: frequencies
+  - https://jsbin.com/vemaho/edit
+- 2D real time visualization: volume meters
+  - http://jsbin.com/kazuzed/edit
+
+---
+class: vertigo
+
+# Working with sound samples loaded in memory
+
+- No streaming/decoding in real time means less CPU is used,
+- With all samples loaded in memory, it's possible to play them in sync with great precision,
+- It's possible to make loops, add effects, change the playback rate, etc.
+- And of course, if they are in memory and uncompressed, there is no wait time for them to start playing: they are ready to be used immediately!  
+
+## Demos
+
+- https://jsbin.com/gojuxo/edit?html,js,console,output
+- https://jsbin.com/gefezu/edit
+- http://remixxer.com/app/
+- http://mainline.i3s.unice.fr/
+- https://codepen.io/teropa/pen/PKoYXM/
+
+
+---
+class: vertigo
+
+# Notes on performance
+
+## Speed vs. Latency vs. Priority
+
+- AudioContext
+- Script processor
+- asm.js
+- WebAssembly
+- AudioWorklet
+
+
+---
+class: vertigo, tight
+
+# Awesome Web Audio!
+
+## Resources
+
 - https://github.com/alemangui/web-audio-resources
-- http://www.websynths.org/
+- https://github.com/notthetup/awesome-webaudio
+- http://tinyletter.com/webaudioweekly
+- http://www.bitwisemusic.com/
+- http://audiocrawl.co/
 
-]
+## More cool examples
 
----
-class: vertigo, center, middle
+- https://mainline.i3s.unice.fr/AmpSim3/
+- https://femurdesign.com/theremin/
+- https://codepen.io/teropa/pen/PKoYXM/
+- http://augeas.github.io/Chaoscillator/
+- http://tanguysynth.com/
+- http://www.html5drummachine.com/
+- https://www.modulargrid.net/e/racks/synth
 
-# Team building
 
 ---
 class: center, middle, vertigo
 
 # Enjoy and have FUN !
+ <hr>
 
-<img src="img/music_hack_day-edit2-1024.jpg" height="400px" />
+Most of the resources of this document are taken from
+Michel Buffa's EDX MOOC : HTML5 Apps and Games :
+
+https://courses.edx.org/courses/course-v1:W3Cx+HTML5.2x+3T2017/course/
