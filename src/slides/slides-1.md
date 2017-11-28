@@ -156,7 +156,7 @@ class: vertigo
 
 # Introduction
 
-<!-- <iframe id="frame" src="https://femurdesign.com/theremin/" scrolling="auto" frameborder="0" allowfullscreen="" width="100%"></iframe> -->
+<iframe id="frame" src="https://femurdesign.com/theremin/" scrolling="auto" frameborder="0" allowfullscreen="" width="100%"></iframe>
 
 
 ---
@@ -164,7 +164,7 @@ class: vertigo
 
 # Introduction
 
-<!-- <iframe id="frame" src="https://webaudiodemos.appspot.com/midi-synth/index.html" scrolling="auto" frameborder="0" allowfullscreen="" width="100%"></iframe> -->
+<iframe id="frame" src="https://webaudiodemos.appspot.com/midi-synth/index.html" scrolling="auto" frameborder="0" allowfullscreen="" width="100%"></iframe>
 
 
 ---
@@ -172,7 +172,7 @@ class: vertigo
 
 # Introduction
 
-<!-- <iframe id="frame" src="http://juno-106.js.org/" scrolling="auto" frameborder="0" allowfullscreen="" width="100%"></iframe> -->
+<iframe id="frame" src="http://juno-106.js.org/" scrolling="auto" frameborder="0" allowfullscreen="" width="100%"></iframe>
 
 
 ---
