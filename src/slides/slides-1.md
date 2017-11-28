@@ -391,6 +391,8 @@ Most of the resources of this document are taken from
 
 Michel Buffa's [EDX MOOC HTML5 Apps and Games](https://www.edx.org/course/html5-apps-games-w3cx-html5-2x)
 
+Thanks Michel!!
+
 ---
 class: center, middle, vertigo
 
