@@ -156,7 +156,7 @@ class: vertigo
 
 # Introduction
 
-<iframe id="frame" src="https://femurdesign.com/theremin/" scrolling="auto" frameborder="0" allowfullscreen="" width="100%"></iframe>
+<!-- <iframe id="frame" src="https://femurdesign.com/theremin/" scrolling="auto" frameborder="0" allowfullscreen="" width="100%"></iframe> -->
 
 
 ---
@@ -164,7 +164,7 @@ class: vertigo
 
 # Introduction
 
-<iframe id="frame" src="https://webaudiodemos.appspot.com/midi-synth/index.html" scrolling="auto" frameborder="0" allowfullscreen="" width="100%"></iframe>
+<!-- <iframe id="frame" src="https://webaudiodemos.appspot.com/midi-synth/index.html" scrolling="auto" frameborder="0" allowfullscreen="" width="100%"></iframe> -->
 
 
 ---
@@ -172,7 +172,7 @@ class: vertigo
 
 # Introduction
 
-<iframe id="frame" src="http://juno-106.js.org/" scrolling="auto" frameborder="0" allowfullscreen="" width="100%"></iframe>
+<!-- <iframe id="frame" src="http://juno-106.js.org/" scrolling="auto" frameborder="0" allowfullscreen="" width="100%"></iframe> -->
 
 
 ---
@@ -310,19 +310,23 @@ class: vertigo
 ---
 class: vertigo
 
-# Notes on performance
+# Performance and tricks
 
 ## Speed vs. Latency vs. Priority
 
-- AudioContext
-- Script processor
-- asm.js
-- WebAssembly
-- AudioWorklet
+- [AudioContext](https://developer.mozilla.org/fr/docs/Web/API/AudioContext)
+- [ScriptProcessorNode](https://developer.mozilla.org/fr/docs/Web/API/ScriptProcessorNode)
+- [asm.js](https://fr.wikipedia.org/wiki/Asm.js)
+- [emscripten](http://kripken.github.io/emscripten-site/)
+- [WebAssembly](http://webassembly.org/getting-started/developers-guide/)
+- [AudioWorklet](https://webaudio.github.io/web-audio-api/#AudioWorkletNode-section) ([What, Why, and How](https://www.youtube.com/watch?v=g1L4O1smMC0))
 
+## Gotchas
+
+- https://github.com/Jam3/web-audio-player#webaudio-gotchas
 
 ---
-class: vertigo, tight
+class: vertigo, tight, tiny
 
 # Awesome Web Audio!
 
@@ -332,10 +336,25 @@ class: vertigo, tight
 - https://github.com/notthetup/awesome-webaudio
 - http://tinyletter.com/webaudioweekly
 - http://www.bitwisemusic.com/
+
+## Tutorials
+
+- https://github.com/mmckegg/web-audio-school
+- https://www.html5rocks.com/en/tutorials/webaudio/games/
+- https://www.edx.org/course/html5-apps-games-w3cx-html5-2x
+- https://aerotwist.com/blog/guitar-tuner/
+- https://www.toptal.com/web/creating-browser-based-audio-applications-controlled-by-midi-hardware
+
+---
+class: vertigo, tight, tiny
+
+# Awesome Web Audio!
+
+.pull-left[
+## More cool examples...
+
+- http://webaudioplayground.appspot.com/
 - http://audiocrawl.co/
-
-## More cool examples
-
 - https://mainline.i3s.unice.fr/AmpSim3/
 - https://femurdesign.com/theremin/
 - https://codepen.io/teropa/pen/PKoYXM/
@@ -343,15 +362,40 @@ class: vertigo, tight
 - http://tanguysynth.com/
 - http://www.html5drummachine.com/
 - https://www.modulargrid.net/e/racks/synth
+- https://github.com/hoch/canopy
+- https://github.com/gibber-cc/gibberish
+]
+.pull-right[
+## ...and libraries
 
+- https://tonejs.github.io/
+- https://howlerjs.com/
+- https://github.com/wavesjs
+- http://collective-soundworks.github.io/soundworks/
+- https://wavesurfer-js.org/
+- https://github.com/bbc/peaks.js
+- https://github.com/Parisson/TimeSide/
+]
 
 ---
 class: center, middle, vertigo
 
 # Enjoy and have FUN !
- <hr>
+
+<hr>
+
+### Guillaume Pellerin / @yomguy / guillaume.pellerin@ircam.fr
+
 
 Most of the resources of this document are taken from
-Michel Buffa's EDX MOOC : HTML5 Apps and Games :
 
-https://courses.edx.org/courses/course-v1:W3Cx+HTML5.2x+3T2017/course/
+Michel Buffa's [EDX MOOC HTML5 Apps and Games](https://www.edx.org/course/html5-apps-games-w3cx-html5-2x)
+
+---
+class: center, middle, vertigo
+
+# Meetup #ParisAudio
+
+<a href="https://www.meetup.com/fr-FR/Paris-Audio/"><img src="https://secure.meetupstatic.com/photos/event/1/0/3/8/highres_361384152.jpeg" width="50%"></a>
+
+https://www.meetup.com/fr-FR/Paris-Audio/
