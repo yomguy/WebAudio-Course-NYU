@@ -201,7 +201,7 @@ class: vertigo, tight
   - JS : Chrome > V8 > NodeJS             
 
 ---
-class: vertigo
+class: vertigo, tight
 
 # Formats media binaires pour le web
 
@@ -223,7 +223,7 @@ https://developer.mozilla.org/fr/docs/Web/HTML/Formats_pour_audio_video
 
 
 ---
-class: vertigo
+class: vertigo, tight
 
 # Langages et architectures logicielles
 
@@ -234,7 +234,7 @@ class: vertigo
 - Frontend
   - HTML, HTML5
   - CSS, SASS
-  - JavaScript
+  - JavaScript, [ECMAScript 6](https://github.com/lukehoban/es6features)
   - frameworks : Angular (Google puis Microsoft), React (Facebook), VueJS, etc..............
 - Architectures & requêtes
   - MVC
