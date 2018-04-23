@@ -3,7 +3,7 @@ class: center, middle, vertigo
 # Introduction to Web Audio
 
 <hr>
-## IRCAM / NYU
+## Guillaume Pellerin - IRCAM / NYU - 23/04/2018
 
 <img src="https://soledadpenades.com/imgs/2014/webaudio-js.png" width="100px">
 &nbsp;
@@ -11,9 +11,9 @@ class: center, middle, vertigo
 &nbsp;
 <img src="http://webaudio.gatech.edu/sites/default/files/images/wacv3_b1.png" width="100px">
 
-### Guillaume Pellerin
-### @yomguy
-### guillaume.pellerin@ircam.fr
+### guillaume.pellerin@ircam.fr  |  @yomguy
+
+https://github.com/yomguy/WebAudio-Course-NYU
 
 ---
 class: vertigo, tight
@@ -60,7 +60,6 @@ class: vertigo, tight
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/601px-WWW_logo_by_Robert_Cailliau.svg.png" width="50%">
 
-
 ]
 
 .pull-right[
@@ -101,14 +100,20 @@ class: vertigo, tight
 
 # Introduction
 
-## Web 1.0
+## Web 1.0 (1995)
 
 ```HTML
 <bgsound src="sound1.mid">
 <bgsound src="sound2.au" loop="infinite">
 ```
 
-## HTML5
+## Flash (1997)
+
+- Player
+- Medias server
+- R.I.P.
+
+## HTML5 (2008)
 
 ```HTML
 <audio src="http://mainline.i3s.unice.fr/mooc/LaSueur.mp3" controls>
@@ -130,7 +135,7 @@ class: vertigo, tight
 
 # Introduction
 
-## HTML5
+## HTML5 (2008)
 
 ```HTML
 <audio src="http://mainline.i3s.unice.fr/mooc/LaSueur.mp3" controls>
@@ -248,6 +253,7 @@ class: vertigo, tight
 ---
 class: vertigo
 
+
 # Web Audio API
 
 ## Specifications
@@ -258,6 +264,11 @@ https://webaudio.github.io/web-audio-api/
 
 https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API
 
+## Implementations
+
+- Now in **all** browsers, but not equally with all functionalities
+- https://html5test.com/
+- https://html5test.com/results/desktop.html
 
 ---
 class: vertigo, tight
@@ -329,7 +340,7 @@ class: vertigo, tight
 - [asm.js](https://fr.wikipedia.org/wiki/Asm.js)
 - [emscripten](http://kripken.github.io/emscripten-site/)
 - [WebAssembly](http://webassembly.org/getting-started/developers-guide/)
-- AudioWorklet
+- AudioWorklet (shipped in Chrome 66)
     - [Specifications](https://webaudio.github.io/web-audio-api/#audioworklet) 
     - [Enter AudioWorklet?](https://developers.google.com/web/updates/2017/12/audio-worklet)
     - [What, Why, and How? (video)](https://www.youtube.com/watch?v=g1L4O1smMC0))
