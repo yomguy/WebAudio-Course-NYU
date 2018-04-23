@@ -30,7 +30,7 @@ class: vertigo, tight
 
 1.  Languages and software architectures
 
-    - Langages
+    - Languages
     - Backend
     - Frontend
 
@@ -39,10 +39,9 @@ class: vertigo, tight
     - Specifications
     - Implementations
     - Documentation
+    - Examples
 
-1. More use cases
-
-    - enhanced audio player
+1. More use cases and tools
 
 ---
 class: vertigo, tight
@@ -206,7 +205,7 @@ class: vertigo, tight
   - Internet Explorer
   - Opera, etc.
   - https://fr.wikipedia.org/wiki/Navigateur_web
-- Renderin engine
+- Rendering engine
   - HTML : KHTML > webkit > Safari & Chrome
   - JS : Chrome > V8 > NodeJS             
 
@@ -219,11 +218,11 @@ class: vertigo, tight
 
 - Image
   - JPEG
-  - PNG (sans pertes)
+  - PNG (lossless)
 - Audio
   - MP3
   - OGG Vorbis
-  - OGG FLAC (sans pertes)
+  - OGG FLAC (lossless)
 - Video
   - MP4
   - WebM
@@ -238,8 +237,8 @@ class: vertigo, tight
 # Languages and software architectures
 
 - Backend
-  - langages PHP, Python, Ruby, C++, Go
-  - sharing formats and metadata : JSON, XML, HTML
+  - languages PHP, Python, Ruby, C++, Go
+  - metadata sharing formats : JSON, XML, HTML
   - frameworks : Symphony, Django, Ruby On Rails
 - Frontend
   - HTML, HTML5
