@@ -1,14 +1,19 @@
 class: center, middle, vertigo
 
-# Introduction au Web Audio
+# Introduction to Web Audio
+
 <hr>
-## Master ATIAM - IRCAM / UPMC / Telecom ParisTech
+## IRCAM / NYU
 
-<img src="https://bedavid.wp.imt.fr/files/2014/10/ATIAM_logo_LONG_RVB-300x82.jpg">
+<img src="https://soledadpenades.com/imgs/2014/webaudio-js.png" width="100px">
+&nbsp;
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" width="100px">
+&nbsp;
+<img src="http://webaudio.gatech.edu/sites/default/files/images/wacv3_b1.png" width="100px">
 
-### Guillaume Pellerin / @yomguy / guillaume.pellerin@ircam.fr
-### Emilie Zawadzki
-### Benjamin Matuszewski
+### Guillaume Pellerin
+### @yomguy
+### guillaume.pellerin@ircam.fr
 
 ---
 class: vertigo, tight
@@ -17,31 +22,27 @@ class: vertigo, tight
 
 1. Introduction
 
-1. Systèmes, normes, protocoles, standards et applications (GP)
+1. Systems, norms, protocols, standards and applications
 
-  - Protocoles
-  - Navigateurs
-  - Formats
+    - Protocols
+    - Browsers
+    - Formats
 
-1.  Langages et architectures logicielles (GP)
+1.  Languages and software architectures
 
-  - Langages
-  - Backend
-  - Frontend
+    - Langages
+    - Backend
+    - Frontend
 
-1. Web Audio API (GP / BM)
+1. Web Audio API
 
-  - Spécifications
-  - Implémentations
-  - Documentation
-  - Cas usage : lecteur audio augmenté
+    - Specifications
+    - Implementations
+    - Documentation
+  
+1. More use cases
 
-1. Cas d'usage (BM)
-
-  - Projets de recherche avec Web Audio
-  - Librairies WaveJS, SoundWorks
-
-1. Exercices et travaux pratiques (EZ)
+    - enhanced audio player
 
 ---
 class: vertigo, tight
@@ -51,10 +52,10 @@ class: vertigo, tight
 .pull-left[
 ## Web ?
 
-- 1989 : Tim Berners-Lee créé le World Wide Web au CERN
+- 1989 : Tim Berners-Lee created the World Wide Web at CERN
 - HTTP : HyperText Transfer Protocol
 - URL : Uniform Resource Locator
-- HTML : HyperText Markup Language (hyperlien)
+- HTML : HyperText Markup Language (hyperlink)
 - Serveur / Client Web
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/601px-WWW_logo_by_Robert_Cailliau.svg.png" width="50%">
@@ -189,9 +190,9 @@ class: vertigo, tight
 - TCP/UDP
   - https://fr.wikipedia.org/wiki/Transmission_Control_Protocol
   - https://tools.ietf.org/html/rfc793
-- Architectures client/serveur
+- Client/server architectures
   - https://fr.wikipedia.org/wiki/Client-serveur
-- Navigateurs
+- Browsers
   - (NCSA Mosaic, NetScape, Mozilla)
   - FireFox
   - Chromium / Chrome
@@ -199,16 +200,16 @@ class: vertigo, tight
   - Internet Explorer
   - Opera, etc.
   - https://fr.wikipedia.org/wiki/Navigateur_web
-- Moteurs de rendu
+- Renderin engine
   - HTML : KHTML > webkit > Safari & Chrome
   - JS : Chrome > V8 > NodeJS             
 
 ---
 class: vertigo, tight
 
-# Formats media binaires pour le web
+# Binary media formats for the web
 
-## objectifs : compression, streaming, embed metadata
+## objectives : compression, streaming, embed metadata
 
 - Image
   - JPEG
@@ -217,10 +218,10 @@ class: vertigo, tight
   - MP3
   - OGG Vorbis
   - OGG FLAC (sans pertes)
-- Vidéo
+- Video
   - MP4
   - WebM
-- Flash R.I.P.
+- Flash (R.I.P.)
 
 https://developer.mozilla.org/fr/docs/Web/HTML/Formats_pour_audio_video
 
@@ -228,18 +229,18 @@ https://developer.mozilla.org/fr/docs/Web/HTML/Formats_pour_audio_video
 ---
 class: vertigo, tight
 
-# Langages et architectures logicielles
+# Languages and software architectures
 
 - Backend
   - langages PHP, Python, Ruby, C++, Go
-  - formats d'échange de meta-données : JSON, XML, HTML
+  - sharing formats and metadata : JSON, XML, HTML
   - frameworks : Symphony, Django, Ruby On Rails
 - Frontend
   - HTML, HTML5
   - CSS, SASS
   - JavaScript, [ECMAScript 6](https://github.com/lukehoban/es6features)
-  - frameworks : Angular (Google puis Microsoft), React (Facebook), VueJS, etc..............
-- Architectures & requêtes
+  - frameworks : Angular (Google then Microsoft), React (Facebook), VueJS, etc..............
+- Architectures & requests
   - MVC
   - AJAX
   - Restful APIs
@@ -256,6 +257,7 @@ https://webaudio.github.io/web-audio-api/
 ## Documentation
 
 https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API
+
 
 ---
 class: vertigo, tight
@@ -281,6 +283,7 @@ class: vertigo, tight
 
 ---
 class: vertigo
+
 
 # Web Audio with canvas
 
@@ -309,10 +312,15 @@ class: vertigo
 - http://remixxer.com/app/
 
 
+
+
 ---
-class: vertigo
+class: vertigo, tight
+
+
 
 # Performance and tricks
+
 
 ## Speed vs. Latency vs. Priority
 
@@ -321,7 +329,10 @@ class: vertigo
 - [asm.js](https://fr.wikipedia.org/wiki/Asm.js)
 - [emscripten](http://kripken.github.io/emscripten-site/)
 - [WebAssembly](http://webassembly.org/getting-started/developers-guide/)
-- [AudioWorklet](https://webaudio.github.io/web-audio-api/#AudioWorkletNode-section) ([What, Why, and How](https://www.youtube.com/watch?v=g1L4O1smMC0))
+- AudioWorklet
+    - [Specifications](https://webaudio.github.io/web-audio-api/#audioworklet) 
+    - [Enter AudioWorklet?](https://developers.google.com/web/updates/2017/12/audio-worklet)
+    - [What, Why, and How? (video)](https://www.youtube.com/watch?v=g1L4O1smMC0))
 
 ## Gotchas
 
@@ -329,6 +340,8 @@ class: vertigo
 
 ---
 class: vertigo, tight, tiny
+
+
 
 # Awesome Web Audio!
 
@@ -339,6 +352,7 @@ class: vertigo, tight, tiny
 - http://tinyletter.com/webaudioweekly
 - http://www.bitwisemusic.com/
 
+
 ## Tutorials
 
 - https://github.com/mmckegg/web-audio-school
@@ -347,8 +361,10 @@ class: vertigo, tight, tiny
 - https://aerotwist.com/blog/guitar-tuner/
 - https://www.toptal.com/web/creating-browser-based-audio-applications-controlled-by-midi-hardware
 
+
 ---
 class: vertigo, tight, tiny
+
 
 # Awesome Web Audio!
 
@@ -368,6 +384,7 @@ class: vertigo, tight, tiny
 - https://github.com/gibber-cc/gibberish
 ]
 .pull-right[
+
 ## ...and libraries
 
 - https://tonejs.github.io/
@@ -379,10 +396,13 @@ class: vertigo, tight, tiny
 - https://github.com/Parisson/TimeSide/
 ]
 
+
 ---
 class: center, middle, vertigo
 
+
 # Enjoy and have FUN !
+
 
 <img src="https://soledadpenades.com/imgs/2014/webaudio-js.png" width="100px">
 &nbsp;
@@ -401,11 +421,4 @@ Michel Buffa's [EDX MOOC HTML5 Apps and Games](https://www.edx.org/course/html5-
 
 Thanks Michel!!
 
----
-class: center, middle, vertigo
 
-# Meetup #ParisAudio
-
-<a href="https://www.meetup.com/fr-FR/Paris-Audio/"><img src="https://secure.meetupstatic.com/photos/event/1/0/3/8/highres_361384152.jpeg" width="50%"></a>
-
-https://www.meetup.com/fr-FR/Paris-Audio/
