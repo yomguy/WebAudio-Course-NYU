@@ -46,7 +46,7 @@ class: vertigo, tight
 ---
 class: vertigo, tight
 
-o Introduction
+# Introduction
 
 .pull-left[
 ## Web ?
