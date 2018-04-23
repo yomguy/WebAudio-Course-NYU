@@ -3,7 +3,9 @@ class: center, middle, vertigo
 # Introduction to Web Audio
 
 <hr>
-## Guillaume Pellerin - IRCAM / NYU - 23/04/2018
+## Guillaume Pellerin, Head Web Team @IRCAM
+
+### IRCAM / NYU - 23/04/2018
 
 <img src="https://soledadpenades.com/imgs/2014/webaudio-js.png" width="100px">
 &nbsp;
@@ -11,9 +13,7 @@ class: center, middle, vertigo
 &nbsp;
 <img src="http://webaudio.gatech.edu/sites/default/files/images/wacv3_b1.png" width="100px">
 
-### guillaume.pellerin@ircam.fr  |  @yomguy
-
-https://github.com/yomguy/WebAudio-Course-NYU
+### https://github.com/yomguy/WebAudio-Course-NYU
 
 ---
 class: vertigo, tight
@@ -39,7 +39,7 @@ class: vertigo, tight
     - Specifications
     - Implementations
     - Documentation
-  
+
 1. More use cases
 
     - enhanced audio player
@@ -47,7 +47,7 @@ class: vertigo, tight
 ---
 class: vertigo, tight
 
-# Introduction
+o Introduction
 
 .pull-left[
 ## Web ?
@@ -82,6 +82,7 @@ class: vertigo, tight
 
 ---
 class: vertigo
+
 
 # Introduction
 
@@ -187,7 +188,7 @@ http://juno-106.js.org/
 ---
 class: vertigo, tight
 
-# Systèmes, normes, protocoles, standards et applications
+# Systems, norms, protocols, standards and applications
 
 - IP
   - https://fr.wikipedia.org/wiki/Internet_Protocol
@@ -335,15 +336,16 @@ class: vertigo, tight
 
 ## Speed vs. Latency vs. Priority
 
+- [Latency](http://padenot.github.io/wac-14-keynote/#17)
 - [AudioContext](https://developer.mozilla.org/fr/docs/Web/API/AudioContext)
 - [ScriptProcessorNode](https://developer.mozilla.org/fr/docs/Web/API/ScriptProcessorNode)
 - [asm.js](https://fr.wikipedia.org/wiki/Asm.js)
 - [emscripten](http://kripken.github.io/emscripten-site/)
 - [WebAssembly](http://webassembly.org/getting-started/developers-guide/)
-- AudioWorklet (shipped in Chrome 66)
-    - [Specifications](https://webaudio.github.io/web-audio-api/#audioworklet) 
-    - [Enter AudioWorklet?](https://developers.google.com/web/updates/2017/12/audio-worklet)
-    - [What, Why, and How? (video)](https://www.youtube.com/watch?v=g1L4O1smMC0))
+- AudioWorklet (finally shipped in Chrome 66)
+    - [Specifications](https://webaudio.github.io/web-audio-api/#audioworklet)
+    - [Enter AudioWorklet](https://developers.google.com/web/updates/2017/12/audio-worklet)
+    - [What, Why, and How? (video)](https://www.youtube.com/watch?v=g1L4O1smMC0)
 
 ## Gotchas
 
@@ -412,7 +414,7 @@ class: vertigo, tight, tiny
 class: center, middle, vertigo
 
 
-# Enjoy and have FUN !
+# Enjoy and have FUN!
 
 
 <img src="https://soledadpenades.com/imgs/2014/webaudio-js.png" width="100px">
@@ -431,5 +433,3 @@ Most of the resources of this document are taken from
 Michel Buffa's [EDX MOOC HTML5 Apps and Games](https://www.edx.org/course/html5-apps-games-w3cx-html5-2x)
 
 Thanks Michel!!
-
-
